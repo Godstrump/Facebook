@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log in or sign up</title>
+
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/fbicon.png">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER ==> LOGO AND LOG IN FORM -->
+        <div class="header">
+            <div class="header__logo-box">
+                <h1 class="header__logo">facebook</h1>
+                <!-- <img src="images/fblogo.png" alt="Facebook Logo" class="header__logo"> -->
+            </div>
+
+            <!-- HEADER LOG IN -->
+            <div class="header__input">
+                <table cellspacing="0" role="presentation">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="header__label" for="email">Email or Phone</label>
+                            </td>
+
+                            <td>
+                                <label class="header__label" for="pass">Password</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="email" id="email" class="header__input-i header__input-e" size="17">
+                            </td>
+
+                            <td>
+                                <input type="password" id="pass" class="header__input-i header__input-p" size="17">
+                            </td>
+
+                            <td>
+                                <button class="btn">Log In</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+
+                            </td>
+
+                            <td>
+                                <a href="#" class="forgot">Forgotten account?</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        
+        </div>
+
+        <!-- MAIN -->
+        <div class="main">
+
+            
+            <!-- CONNECT SECTION -->
+            <div class="connect">
+                <p class="connect__paragraph">
+                    Facebook helps you connect and share with the people in your life.
+                </p>
+                <img src="images/fb.png" alt="" class="connect__image">
+            </div>
+
+
+
+            <!-- CREATE/SIGNUP SECTION -->
+            <div class="create">
+                <!-- SIGN UP SECTION -->
+                <h1 class="create__header">Create an account</h1>
+                <p class="create__sub-header">It's quick and easy</p>
+
+                <!-- FIRST NAME INPUT FORM -->
+                <div class="create__form">
+                    <div class="create__form-input">
+                        <input type="text" name="fname" placeholder="First name" class="create__input-fname create__input--name">
+                        <input type="text" name="lname" placeholder="Surname" class="create__input-lname create__input--name">
+                    </div>
+
+                    <div class="create__form-input">
+                        <input type="email" name="email" placeholder="Mobile number or email address" class="create__input-long create__input--name">
+                    </div>
+
+                    <div class="create__form-input">
+                        <input type="password" name="pass" placeholder="New password" class="create__input-long create__input--name">
+                    </div>
+
+                    <div class="create__form-label"><label class="create__label" for="pass">Birthday</label></div>
+
+                    <!-- DAY INPUT -->
+                    <div class="create__form-date">
+                        <select name="day" id="day" class="create__date">
+                            <option value="0">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+
+                        <!-- MONTH INPUT -->
+                        <select name="month" id="month" class="create__date">
+                            <option value="0">Month</option>
+                            <option value="1">Jan</option>
+                            <option value="2">Feb</option>
+                            <option value="3">Mar</option>
+                            <option value="4">Apr</option>
+                            <option value="5">May</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Jul</option>
+                            <option value="8">Aug</option>
+                            <option value="9">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dev</option>
+                        </select>
+
+                        <!-- YEAR INPUT -->
+                        <select name="year" id="year" class="create__date">
+                            <option value="0">Year</option>
+                            <option value="1">2020</option>
+                            <option value="2">2019</option>
+                            <option value="3">2018</option>
+                            <option value="4">2017</option>
+                            <option value="5">2016</option>
+                            <option value="6">2015</option>
+                            <option value="7">2014</option>
+                            <option value="8">2013</option>
+                            <option value="9">2012</option>
+                            <option value="10">2011</option>
+                            <option value="11">2010</option>
+                            <option value="12">2009</option>
+                            <option value="13">2008</option>
+                            <option value="14">2007</option>
+                            <option value="15">2006</option>
+                            <option value="16">2005</option>
+                            <option value="17">2004</option>
+                            <option value="18">2003</option>
+                            <option value="19">2002</option>
+                            <option value="20">2001</option>
+                            <option value="21">2000</option>
+                            <option value="22">1999</option>
+                            <option value="23">1998</option>
+                            <option value="24">1997</option>
+                            <option value="25">1996</option>
+                            <option value="26">1995</option>
+                            <option value="27">1994</option>
+                            <option value="28">1993</option>
+                            <option value="29">1992</option>
+                            <option value="30">1991</option>
+                            <option value="31">1990</option>
+                        </select>
+                    </div>
+
+                    <!-- GENDER -->
+                    <div class="create__form-gender">
+                        <div><label class="create__label create__label-gender" for="pass">Gender</label></div>
+                        <sup><input type="radio" name="gender" class="create__input-radio" id="fmale"></sup>
+                        <label class="create__label-radio" for="fmale">Female</label>
+
+                        <sup><input type="radio" name="gender" class="create__input-radio" id="male"></sup>
+                        <label class="create__label-radio" for="male">Male</label>
+
+                        <sup><input type="radio" name="gender" class="create__input-radio" id="custom"></sup>
+                        <label class="create__label-radio" for="custom">Custom</label>
+                    </div>
+
+                    <!-- TERMS AND CONDITON -->
+                    <div class="create__paragraph">
+                        <p>By clicking Sign Up, you agree to our <a href="#" class="create__link">Terms</a>, 
+                            <a href="#" class="create__link">Data Policy</a> and <a href="#" class="create__link">Cookie Policy</a>. 
+                            You may receive SMS notifications from us and can opt out at any time</p>
+                    </div>
+
+                    <!-- SIGN UP BUTTON -->
+                    <div class="create__signup">
+                        <button class="create__signup-btn">Sign Up</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

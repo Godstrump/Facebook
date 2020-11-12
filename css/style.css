@@ -1,0 +1,282 @@
+/* 
+BKG-COLOR-HEADER: rgb(59, 89, 152)
+INPUT-BORDER-COLOR: rgb(29, 42, 91)
+BTN-BORDER-COLOR: rgb(41, 72, 125)
+FORGOTTEN-PASS-COLOR: rgb(156, 171, 198)
+
+CREATE-HEADER-COLOR: rgb(51, 51, 51)
+CREATE-SUB-HEADER-COLOR: rgb(29, 33, 41) AND GENDER LIST
+BIRTHDAY-GENDER-COLOR: rgb(144, 148, 156)
+MAIN-BKG-COLOR: rgb(221, 225, 237)
+CREATE-A-PAGE-COLOR: rgb(56, 88, 162) AND rgb(102, 102, 102)
+CREATE-INPUT-BORDER: rgb(189, 199, 216)
+CREATE-INPUT-PLACEHOLDER-COLOR: rgb(153, 153, 153)
+CREATE-PARAGRAPH-COLOR: rgb(119, 119, 119)
+
+BTN-COLOR: rbg(66, 103, 178)
+PICTURE-HEADER-COLOR: rgb(14, 56, 95)
+SIGNUP-BTN-COLOR: rgb(100, 167, 81), rgb(93, 150, 74)
+TEXT-COLOR-HEADER: 
+
+*/
+
+@font-face {
+    font-family: facebook;
+    src: url(FACEBOLF.OTF);
+}
+
+.container {
+    display: table;
+    width: 100vw;
+}
+
+.header {
+    background-color: rgb(59, 89, 152);
+    /* display: flow-root; */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    border-bottom: .1rem solid ;
+}
+
+/* 1em = 16px */
+    @media (max-width: 62.5em) { /* 1000px*/
+        .header {
+            justify-content: space-between;
+        }
+    }
+
+.header__logo-box {
+}
+
+.header__logo {
+    font-family: facebook;
+    font-size: 4rem;
+    font-weight: normal;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* input:focus,
+input:active {
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    border-radius: .5rem;
+} */
+
+.header__input {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    font-family: Helvetica;
+    margin-bottom: .8rem;
+}
+
+.header__label {
+    display: inline-block;
+    margin-bottom: .4rem;
+}
+
+.header__input-i {
+    padding: .25rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(41, 72, 125);
+    outline: none;
+}
+
+.header__input-i {
+    text-indent: .3rem;
+}
+
+.header__input-e {
+    margin-right: 1rem;
+}
+
+.btn {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(41, 72, 125);
+    color: inherit;
+    background-color: rgb(66, 103, 178);
+    box-shadow: 0 1rem 2rem rgba(black,.2);
+    margin-left: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .25rem .5rem;
+    
+}
+
+.forgot {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(156, 171, 198);
+    padding-top: .6rem;
+    cursor: pointer;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.main {
+    background-image: linear-gradient(rgb(253, 253, 254), rgb(221, 225, 237));
+    height: 100%;
+    width: 100%;
+    /* display: flow-root; */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+    @media (max-width: 62.5em) {
+        .main {
+            justify-content: space-between;
+        }
+    }
+
+.connect {
+    padding-top: 5rem;
+    margin-left: 24rem;
+}
+
+    @media (max-width: 62.5em) {
+
+    }
+
+
+.connect__paragraph {
+    width: 50rem;
+    color: rgb(14, 56, 95);
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Helvetica;
+}
+
+.create__sub-header {
+    font-size: 2rem;
+}
+
+.create {
+    padding-top: 2.6rem;
+    margin-right: 25rem;
+}
+
+    @media (max-width: 62.5em) {
+        .create {
+            margin-right: 0;
+        }
+
+        .connect {
+            margin-left: 0;
+        }
+    }
+
+
+.create__header {
+    color: rgb(51, 51, 51);
+    font-size: 3.9rem;
+}
+
+.create__input--name {
+    display: inline-block;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    border-radius: .5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(189, 199, 216);
+    width: 20rem;
+    height: 4rem;
+    outline: none;
+}
+
+.create__input--name::-webkit-input-placeholder {
+    color: rgb(153, 153, 153);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.create__input-fname {
+    margin-right: 1rem;
+}
+
+.create__input-long {
+    width: 42.5rem;
+    margin-top: 1.5rem;
+}
+
+.create__label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-top: 1.3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(144, 148, 156);
+}
+
+.create__date {
+    width: 7rem;
+    height: 3rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(189, 199, 216);
+}
+
+select:focus {
+    outline: none;
+}
+
+.create__label-gender {
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+}
+
+.create__input-radio {
+    margin-left: 1rem;
+
+}
+
+.create__label-radio {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    padding-left: .5rem;
+}
+
+.create__link {
+    text-decoration: none;
+}
+
+.create__paragraph {
+    width: 31rem;
+    font-size: 1rem;
+    color: rgb(119, 119, 119);
+    margin-top: 1.3rem;
+}
+
+.create__signup {
+    margin-top: 2rem;
+}
+
+.create__signup-btn {
+    font-family: Candara;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: .5rem;
+    border-color: rgb(59, 110, 34);
+    background-image: linear-gradient(rgb(100, 167, 81), rgb(93, 150, 74));
+    box-shadow: 0 1rem 2rem rgba(black,.2);
+    width: 20rem;
+    padding: .8rem;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}

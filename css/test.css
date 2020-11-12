@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 50%;
+    box-sizing: border-box;
+}
+
+.test {
+    color: black;
+    background-color: green;
+    
+    /* border: 1px solid red; */
+    /* margin: 0rem 1rem 0rem 3rem; */
+    /* padding: 1rem; */
+}
+
+.fb {
+    float: right;
+    font-size: 1rem;
+}
+
+/* .test:hover {
+    background-color: green;
+    color: white;
+}
+
+.lorem::first-letter {
+    color: red;
+    font-size: 1.5rem;
+} */
+
+/* .test:last-child {
+    background-color: darkgray;
+    color: darksalmon;
+} */
+
+/* .lorem::after {
+    content: ". The Last Child. ";
+    color: blue;
+    background-color: white;
+} */
+
+.lorem {
+    font-size: 1rem;
+    float: left;
+}
+
+.spa {
+    display: block;
+}
+
+li {
+    /* display: inline-block; */
+}
